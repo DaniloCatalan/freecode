@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <style>
+        .center_style{
+            text-align: center;
+        }
+        form{
+            background-color:#336B87;
+            padding: 2.5rem;
+            border-radius: 0.25rem;
+            color: white;
+        }
+        body{
+            background-color:#90AFC5;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .title{
+            color:#2A3132;
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <header>
+                <div class="center_style">
+                    <div class="title"><H1 id="title">Test Form</H1></div>
+                    <p id="description" class="title">This is just a test, thanks!!</p>
+                </div>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="eg. Jhon" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" class="form-control"  name="email" id="email" placeholder="eg. jhon@doe.cl" required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" class="form-control"  name="number" id="number" placeholder="eg. 18 to 120" min="18" max="120">
+                </div>
+                <div class="form-group">
+                    <label for="dropdown" id="film-label">Favorite film</label>
+                    <select  id="dropdown" name="dropdown" class="form-control">
+                        <option value="1">Star Trek</option>
+                        <option value="2">Star wars</option>
+                        <option value="3">2001: A Space Odyssey</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>When was the last time you watched</legend>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="last" id="today" value="1">
+                            <label class="form-check-label" for="today">Today</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="last" id="yesterday" value="2">
+                            <label class="form-check-label" for="yesterday">Yesterday</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input class="form-check-input" type="radio" name="last" id="never" value="3">
+                            <label class="form-check-label" for="never">Never</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Select your favorite weapon</legend>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="gun" id="lsgun" value="ls">
+                            <label for="lsgun" class="form-check-label">Lightsaber</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="gun" id="pgun" value="p">
+                            <label for="pgun" class="form-check-label">Phaser of hand</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" name="gun" id="lwgun" value="lw">
+                            <label for="lwgun" class="form-check-label">Laser weapon</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <p>*Optional*</p>
+                    <textarea class="form-control" placeholder="eg. i love this film, because..."></textarea>
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary btn-block">Send test</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="center_style">Author: Danilo P. Catalán</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
