@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Product Landing page</title>
+    <style>
+        body{
+            font-family: 'Alata', sans-serif;
+        }
+        header{
+            position: fixed;
+        }
+        .nav-link{
+
+        }
+        li {
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .logo {
+            width: 60vw;
+        }
+        .video{
+            margin: auto;
+            max-width: 100%;
+            display: block;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .btn{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img  id="" src="https://testdanilo.s3.amazonaws.com/logo.png" alt="logo cool">
+        </div>
+        <h1>landing page</h1>
+        
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#opt1" class="nav-link">Opt 1</a></li>
+                <li><a href="#opt2" class="nav-link">Opt 2</a></li>
+                <li><a href="#opt3" class="nav-link">Opt 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="opt1">
+            <h2>Welcome</h2>
+            <p></p>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>Free Code
+            <i class="fa fa-code" aria-hidden="true"></i>Code 
+            <i class="fa fa-css3" aria-hidden="true"></i>CSS
+        </section>
+        <section id="opt2">
+            <div class="video">
+                <iframe id="video" width="901" height="507" src="https://www.youtube.com/embed/srvUrASNj0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="opt3">
+            <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="" placeholder="here your email adress, please" required>
+                <button id="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
