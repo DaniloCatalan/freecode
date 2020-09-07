@@ -3,28 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <title>Product Landing page</title>
     <style>
         body{
             font-family: 'Alata', sans-serif;
+            background-color:#c4dfe6;
         }
         header{
             position: fixed;
+            top: 0;
+            min-height: 70px;
+            padding: 0px 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#07575B;
         }
-        .nav-link{
-
+        footer{
+            padding: 0px 10px;
+            display: flex;
+            background-color:#07575B;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav>link{
+            width: 35vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        nav > ul {
+            width: 35vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
         li {
             list-style: none;
         }
         a{
             text-decoration: none;
+            color:#66A5AD;
         }
         .logo {
             width: 60vw;
+        }
+        .logo> img {
+            width: 100%;
+            height: 100%;
+            max-width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 20px;
         }
         .video{
             margin: auto;
@@ -35,50 +69,116 @@
             text-align: center;
         }
         .btn{
-            background-color: burlywood;
+            background-color:#00C4CC;
+            border:none;
+            font-weight: bold;
+            border:none;
+            padding: 5px;
+        }
+        #hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 200px;
+            margin-top: 50px;
+        }
+        .centro{
+            text-align: center;
+        }
+        label{
+            display: block;
+            width: 100px;
+        }
+        footer > ul {
+            display: flex;
+            justify-content: flex-end;
         }
     </style>
 </head>
 <body>
     <header id="header">
         <div class="logo">
-            <img  id="" src="https://testdanilo.s3.amazonaws.com/logo.png" alt="logo cool">
+            <img  id="header-img" src="https://testdanilo.s3.amazonaws.com/html5.png" alt="logo cool">
         </div>
-        <h1>landing page</h1>
-        
         <nav id="nav-bar">
             <ul>
-                <li><a href="#opt1" class="nav-link">Opt 1</a></li>
-                <li><a href="#opt2" class="nav-link">Opt 2</a></li>
-                <li><a href="#opt3" class="nav-link">Opt 3</a></li>
+                <li><a href="#opt1" class="nav-link">About</a></li>
+                <li><a href="#opt2" class="nav-link">Our work</a></li>
+                <li><a href="#opt3" class="nav-link">Thanks</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="opt1">
-            <h2>Welcome</h2>
-            <p></p>
-            <i class="fa fa-free-code-camp" aria-hidden="true"></i>Free Code
-            <i class="fa fa-code" aria-hidden="true"></i>Code 
-            <i class="fa fa-css3" aria-hidden="true"></i>CSS
-        </section>
+        <div id="hero">
+            <h1>Welcome</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="here your email, please" required>
+                <br>
+                <input type="submit" id="submit" class="btn" value="submit">
+            </form>
+        </div>
+        <div class="container">
+            <section id="opt1">
+                <h2 class="centro">About</h2>
+                <h3>Free Code</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna neque, ultrices et elit maximus, 
+                    elementum rhoncus risus. Vivamus tempor elit at rutrum sagittis. Sed eu consectetur elit. Morbi nisl eros, 
+                    accumsan ut vestibulum ac, bibendum in urna. 
+                    Phasellus rhoncus sem id viverra tincidunt. Etiam in bibendum mi. Suspendisse in pellentesque augue, ut blandit neque.
+                </p>
+                <h3>Code</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna neque, ultrices et elit maximus, 
+                    elementum rhoncus risus. Vivamus tempor elit at rutrum sagittis. Sed eu consectetur elit. Morbi nisl eros, 
+                    accumsan ut vestibulum ac, bibendum in urna. 
+                    Phasellus rhoncus sem id viverra tincidunt. Etiam in bibendum mi. Suspendisse in pellentesque augue, ut blandit neque.
+                </p>
+                <h3>CSS</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna neque, ultrices et elit maximus, 
+                    elementum rhoncus risus. Vivamus tempor elit at rutrum sagittis. Sed eu consectetur elit. Morbi nisl eros, 
+                    accumsan ut vestibulum ac, bibendum in urna. 
+                    Phasellus rhoncus sem id viverra tincidunt. Etiam in bibendum mi. Suspendisse in pellentesque augue, ut blandit neque.
+                </p>
+            </section>
+        </div>
         <section id="opt2">
+            <h2 class="centro">Our work</h2>
             <div class="video">
                 <iframe id="video" width="901" height="507" src="https://www.youtube.com/embed/srvUrASNj0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section id="opt3">
-            <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
-                <label for="email">Email</label>
-                <input type="email" id="" placeholder="here your email adress, please" required>
-                <button id="submit" class="btn">Submit</button>
-            </form>
+            <h2 class="centro">Thanks!</h2>
+            <p>
+                In sagittis sit amet neque semper venenatis. Cras odio urna, aliquet ac leo vitae, 
+                aliquet facilisis felis. Praesent mi lorem, semper et purus vitae, venenatis maximus felis. 
+                In hac habitasse platea dictumst. Phasellus sed mi eu libero posuere molestie in eu mauris. 
+                Duis pulvinar cursus ligula non semper. 
+                Vestibulum pulvinar lorem eu odio tempor sollicitudin.
+                Proin est purus, sollicitudin eu ultrices ut, imperdiet sed mi. Etiam dapibus est dignissim tincidunt fringilla. 
+                Morbi in dui ante. 
+                Aenean vel rhoncus sapien, sed condimentum diam. Etiam interdum sodales metus, ullamcorper varius lectus porttitor quis. 
+                Mauris non nisl nec quam pellentesque finibus. Proin leo massa, rutrum quis pretium non, convallis quis lectus. 
+                Ut a arcu tristique, feugiat enim at, rutrum mi. Mauris vulputate velit eu elit suscipit, vitae consequat erat suscipit.
+                Cras ullamcorper congue nisl at porta. Mauris semper accumsan urna, vel ullamcorper erat congue sit amet. Donec nec fringilla dolor. 
+                Suspendisse potenti. Quisque eu dictum diam. Morbi pretium nisi eros, ac varius turpis congue blandit. 
+                Phasellus dolor diam, viverra vehicula orci sed, viverra tempor nulla.
+            </p>
         </section>
     </main>
-    <footer></footer>
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">Privacy</a>|
+                <a href="#">Terms</a>|
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </footer>
+ </body>
 </html>
