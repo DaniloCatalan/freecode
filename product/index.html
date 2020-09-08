@@ -47,9 +47,6 @@
             text-decoration: none;
             color:#66A5AD;
         }
-        .logo {
-            width: 60vw;
-        }
         .logo> img {
             width: 100%;
             height: 100%;
@@ -59,14 +56,6 @@
             align-items: center;
             text-align: center;
             margin-left: 20px;
-        }
-        .video{
-            margin: auto;
-            max-width: 100%;
-            display: block;
-            height: auto;
-            margin: 0 auto;
-            text-align: center;
         }
         .btn{
             background-color:#00C4CC;
@@ -95,6 +84,26 @@
             display: flex;
             justify-content: flex-end;
         }
+        @media only screen and (max-width: 330px) {
+            .logo{
+                display: none;
+            }
+        }
+        .logo {
+            width: 60vw;
+        }
+        .video{
+            max-width: 100%;
+            display: block;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+        @media only screen and (max-width: 330px) {
+            .video{
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -113,12 +122,10 @@
     <main>
         <div id="hero">
             <h1>Welcome</h1>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" placeholder="here your email, please" required>
-                <br>
-                <input type="submit" id="submit" class="btn" value="submit">
-            </form>
+            <form id="form" name="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <input type="email" id="email" name="email" required="true" spellcheck="false" placeholder="Enter your email address"/>
+                <input type="submit" id="submit" class="btn" value="Send"/>
+              </form>
         </div>
         <div class="container">
             <section id="opt1">
@@ -150,6 +157,9 @@
             <h2 class="centro">Our work</h2>
             <div class="video">
                 <iframe id="video" width="901" height="507" src="https://www.youtube.com/embed/srvUrASNj0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="centro">
+                <p><small><a href="https://youtu.be/srvUrASNj0s" target="_blank">ver video..</a></small></p>
             </div>
         </section>
         <section id="opt3">
